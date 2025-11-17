@@ -1,0 +1,90 @@
+.about {
+    margin-top: 293px;
+    margin-bottom: 290px;
+}
+
+.about__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__left {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url("../../assets/light.png");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 717px;
+        height: 500px;
+        top: -95px;
+        left: -270px;
+
+    }
+}
+
+.about__text {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 56px;
+    max-width: 516px;
+
+}
+
+.about__info {
+    color: rgba(168, 168, 168, 1);
+    font-size: 18px;
+    letter-spacing: 5.5%;
+    max-width: 620px;
+    line-height: 154%;
+    margin-bottom: 76px;
+}
+
+.about__more {
+    color: rgba(253, 253, 253, 1);
+    padding: 20px 50px;
+    background-color: rgba(255, 145, 66, 1);
+    border-radius: 47px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.about__right {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url("../../assets/linewithradius.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 55px;
+        height: 178px;
+        z-index: 999;
+        bottom: 70px;
+        left: -26px;
+    }
+
+    &::after {
+        content: "";
+        background-image: url("../../assets/linewithradius.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 110px;
+        height: 100px;
+        z-index: 999;
+       transform: rotate(90deg);
+       top: -11px;
+       right: 3px;
+    }
+}

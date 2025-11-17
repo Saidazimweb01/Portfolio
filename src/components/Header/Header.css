@@ -1,0 +1,45 @@
+.head__logo {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.head__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.head {
+    margin-top: 30px;
+}
+
+.head__list {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.head__item {
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+}
+
+.head__btn {
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 35px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(3, 3, 4, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}

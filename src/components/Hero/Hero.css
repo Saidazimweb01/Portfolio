@@ -1,0 +1,58 @@
+.hero {
+    position: relative;
+    margin-top: 191px;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../assets/light.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 717px;
+        height: 717px;
+        left: calc(50% - 2px);
+        top: -190px;
+    }
+}
+
+
+.hero__title {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 93px;
+}
+
+.hero__box {
+    text-align: center;
+    
+
+    & .hero__btn {
+      
+        
+        color: rgba(244, 247, 250, 1);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.63px;
+        background-color: rgba(255, 145, 66, 1);
+        padding: 24px 27px 26px 40px;
+        border-radius: 32.5px;
+        border: none;
+        margin: 0 auto;
+        
+        
+        cursor: pointer;
+
+        & img{
+            margin-left: 24px;
+        }
+        
+        
+        &:hover {
+            opacity: 0.8;
+
+        }
+    }
+}
