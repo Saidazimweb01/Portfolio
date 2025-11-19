@@ -5,7 +5,7 @@ import myPhoto from "../../assets/myphoto.png"
 export default function About() {
     return (
         <>
-            <section className="about">
+            <section id="about" className="about">
                 <div className="container">
                     <div className="about__box">
                         <div className="about__left">

@@ -1,33 +1,41 @@
 import "./Header.css"
 import logo from "../../assets/logo.png"
+import burgeBtn from "../../assets/burgerbtn.svg"
 
-export default function Header() {
+export default function Header({ burgerBtn, isOpen }) {
     return (
-        <>
-            <header className="head">
-                <div className="container">
-                    <div className="head__box">
-                        <img className="head__logo" width={230} src={logo} alt="" />
 
+        <header id="head" className="head">
+            <div className="container">
+                <div className="head__box">
+                    <a href="#head">
+                        <img className="head__logo" width={230} src={logo} alt="" />
+                    </a>
+
+                    <nav className={`head__navbar ${isOpen ? "head--open" : ""}`}>
                         <ul className="head__list">
                             <li className="head__item">
-                                Home
+                                <a href="#hero">Home</a>
                             </li>
                             <li className="head__item">
-                                About
+                                <a href="#about">About</a>
                             </li>
                             <li className="head__item">
-                                My works
+                                <a href="#works">My works</a>
                             </li>
                             <li className="head__item">
-                                <button className="head__btn">
+                                <a href="#contact" className="head__btn">
                                     Contact
-                                </button>
+                                </a>
                             </li>
+
                         </ul>
-                    </div>
+                    </nav>
+
+                    <button onClick={() => burgerBtn()} className="head__burgerbtn"><img className="head__burgerbtn__img" width={30} height={30} src={burgeBtn} alt="" /></button>
                 </div>
-            </header>
-        </>
+            </div>
+        </header >
+
     )
 }

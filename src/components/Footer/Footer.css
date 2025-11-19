@@ -4,6 +4,12 @@
     padding-bottom: 83px;
 }
 
+.foot__tg__box {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .foot__title {
     color: rgba(255, 145, 66, 1);
     font-size: 24px;
@@ -14,7 +20,7 @@
 .foot__tg__box {
     text-align: center;
     margin-top: 23px;
-    margin-bottom: 193px;
+    margin-bottom: 153px;
 }
 
 
@@ -28,6 +34,17 @@
         opacity: 0.8;
     }
 
+}
+
+.foot__github {
+    color: rgba(255, 255, 255, 1);
+    font-size: 64px;
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .foot__box {
@@ -65,6 +82,14 @@
         }
     }
 
+    & .foot__telegram {
+        width: 50px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
 
     .foot__infos {
         display: flex;
@@ -82,12 +107,113 @@
     font-size: 24px;
 
 
-    & a{
+    & a {
         color: aqua;
 
-        &:hover{
+        &:hover {
             text-decoration: underline;
             opacity: 0.8;
         }
+    }
+}
+
+
+
+@media(max-width:959px) {
+    .foot__tg {
+        font-size: 45px;
+    }
+
+    .foot__github {
+        font-size: 45px;
+    }
+}
+
+
+@media(max-width:817px) {
+    .foot__adress {
+        & a {
+            font-size: 18px;
+        }
+    }
+
+    .foot__infos {
+        & .foot__tel {
+            font-size: 18px;
+        }
+
+        & .foot__telegram {
+            & img {
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media(max-width:681px) {
+    .foot__tg {
+        font-size: 32px;
+    }
+
+    .foot__github {
+        font-size: 32px;
+    }
+}
+
+
+@media(max-width:620px) {
+    .foot__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .foot__tg__box {
+        margin-bottom: 90px;
+    }
+
+    .foot__adress {
+        text-align: center;
+
+        & a {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    }
+
+    .foot__infos {
+        text-align: center;
+        margin: 0 auto;
+
+        & a {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media(max-width:446px) {
+    .foot__tg {
+        font-size: 25px;
+    }
+
+    .foot__github {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:366px) {
+    .foot__bottom {
+        font-size: 18px;
+    }
+
+     .foot__tg{
+        font-size: 18px;
+    }
+    .foot__github{
+        font-size: 18px;
     }
 }

@@ -7,18 +7,22 @@ export default function Footer() {
     return (
 
         <>
-            <footer className="foot">
+            <footer id="contact" className="foot">
                 <div className="container">
                     <h3 className="foot__title">Get in Touch With Us</h3>
                     <div className="foot__tg__box">
-                        <a className="foot__tg" href="https://t.me/Akh_ass">Telegram: @Akh_ass</a>
+                        <a className="foot__tg" href="https://t.me/Akh_ass" target="_blank">Telegram: @Akh_ass</a>
+                        <a className="foot__github" href="https://github.com/Saidazimweb01" target="_blank">GitHub: @Saidazimweb01</a>
+
                     </div>
 
                     <div className="foot__box">
                         <div className="foot__logo__box">
 
-                            <img src={logo} className="foot__logo" width={230} alt="" />
+                            <a href="#hero">
+                                <img src={logo} className="foot__logo" width={230} alt="" />
 
+                            </a>
                         </div>
 
                         <div className="foot__adress">
