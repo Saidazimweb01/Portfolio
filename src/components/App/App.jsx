@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./app.css"
+import "./App.css"
 import Header from "../header/header";
 import Hero from "../hero/hero";
 import Projects from "../projects/projects";
