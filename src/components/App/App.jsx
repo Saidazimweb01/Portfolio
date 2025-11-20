@@ -3,12 +3,11 @@ import { useState } from "react";
 import "./app.css"
 import Header from "../header/header";
 import Hero from "../hero/hero";
-
 import Projects from "../projects/projects";
 import Skills from "../skills/skills";
-import About from "../About/About";
-import Footer from "../Footer/Footer";
+import About from "../about/about";
 
+import Footer from "../footer/footer";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false)
@@ -35,11 +34,11 @@ function App() {
             <Header isOpen={isOpen} setIsOpen={setIsOpen} burgerBtn={burgerBtn} />
             <main>
                 <Hero />
-                <About />
+            
                 <Projects />
                 <Skills />
             </main>
-            <Footer />
+           
         </>
     )
 }
