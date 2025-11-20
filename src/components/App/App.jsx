@@ -1,11 +1,12 @@
 import { useState } from "react";
-import About from "../About/About";
-import Footer from "../Footer/Footer";
+
+import "./App.css"
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
+import About from "../About/About";
 import Projects from "../projects/Projects";
-import Skills from "../Skills/Skills";
-import "./App.css"
+import Skills from "../skills/Skills";
+import Footer from "../Footer/Footer";
 
 function App() {
     const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +29,6 @@ function App() {
 
 
     return (
-
         <>
             <Header isOpen={isOpen} setIsOpen={setIsOpen} burgerBtn={burgerBtn} />
             <main>
