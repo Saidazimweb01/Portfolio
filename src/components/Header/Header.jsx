@@ -1,4 +1,4 @@
-import "./header.css"
+import "./Header.css"
 import logo from "../../assets/logo.png"
 import burgeBtn from "../../assets/burgerbtn.svg"
 
