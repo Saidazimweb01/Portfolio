@@ -34,11 +34,11 @@ function App() {
             <Header isOpen={isOpen} setIsOpen={setIsOpen} burgerBtn={burgerBtn} />
             <main>
                 <Hero />
-            
+                <About />
                 <Projects />
                 <Skills />
             </main>
-           
+            <Footer />
         </>
     )
 }
