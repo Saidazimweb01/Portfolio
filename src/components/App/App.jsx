@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./App.css"
+import "./app.css"
 import Header from "../header/header";
 import Hero from "../hero/hero";
 import Projects from "../projects/projects";
@@ -34,11 +34,11 @@ function App() {
             <Header isOpen={isOpen} setIsOpen={setIsOpen} burgerBtn={burgerBtn} />
             <main>
                 <Hero />
-                <About />
+            <About/>
                 <Projects />
                 <Skills />
             </main>
-            <Footer />
+           <Footer/>
         </>
     )
 }
