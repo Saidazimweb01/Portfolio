@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-import "./App.css"
-import Header from "../Header/Header";
-import Hero from "../Hero/Hero";
+import "./app.css"
+import Header from "../header/header";
+import Hero from "../hero/hero";
+
+import Projects from "../projects/projects";
+import Skills from "../skills/skills";
 import About from "../About/About";
-import Projects from "../projects/Projects";
-import Skills from "../skills/Skills";
 import Footer from "../Footer/Footer";
+
 
 function App() {
     const [isOpen, setIsOpen] = useState(false)

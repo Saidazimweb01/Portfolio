@@ -1,4 +1,4 @@
-import "./Hero.css"
+import "./hero.css"
 import icon from "../../assets/icon-right.svg"
 
 export default function Hero() {

@@ -1,4 +1,4 @@
-import "./Skills.css"
+import "./skills.css"
 import htmlLogo from "../../assets/html5.svg"
 import cssLogo from "../../assets/css.svg"
 import jsLogo from "../../assets/javascript.svg"

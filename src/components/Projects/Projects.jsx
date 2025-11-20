@@ -1,4 +1,4 @@
-import "./Projects.css"
+import "./projects.css"
 import medClinic from "../../assets/med-clinic.png"
 import weather from "../../assets/weather.webp"
 import pixer from "../../assets/pixer.webp"
